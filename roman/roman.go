@@ -13,7 +13,6 @@ func NToI(n int) string {
 // NToX erwartet eine Zahl und liefert die entsprechende Anzahl an X als String.
 func NToX(n int) string {
 	return strings.Repeat("X", n)
-	// iftask: return ""
 }
 
 // HINT

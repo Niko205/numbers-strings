@@ -5,5 +5,10 @@ package parse_string
 // Ist der String kein gültiger Wert, wird -1 zurückgegeben.
 func ParseDigit(digit string) int {
 	// TODO
-	return 0
+	if digit[0] >= '0' && digit[0] <= '9' {
+		return int(digit[0] - 48)
+	} else if digit[0] >= 'A' && digit[0] <= 'F' {
+		return int(digit[0] - 55)
+	}
+	return -1
 }

@@ -10,6 +10,28 @@ package natural
 // Dies ist eine Hilfsfunktion, die genutzt werden soll,
 // um den Gesamt-String einer Zahl zusammenzusetzen.
 func DigitString10(digit int) string {
-	// TODO
-	return ""
+	s := ""
+	switch digit {
+	case 0:
+
+	case 1:
+
+	case 2:
+		s = "zwanzig"
+	case 3:
+		s = "dreißig"
+	case 4:
+		s = "vierzig"
+	case 5:
+		s = "fünfzig"
+	case 6:
+		s = "sechzig"
+	case 7:
+		s = "siebzig"
+	case 8:
+		s = "achtzig"
+	case 9:
+		s = "neunzig"
+	}
+	return s
 }

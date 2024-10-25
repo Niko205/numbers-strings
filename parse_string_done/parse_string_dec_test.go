@@ -12,7 +12,7 @@ func TestParseStringDecimal(t *testing.T) {
 	}
 
 	if ParseStringDecimal("23") != 23 {
-		t.Errorf("ParseStringDecimal(\"23\") == %d, expected 2", ParseStringDecimal("23"))
+		t.Errorf("ParseStringDecimal(\"23\") == %d, expected 23", ParseStringDecimal("23"))
 	}
 
 	if ParseStringDecimal("456") != 456 {
@@ -21,5 +21,8 @@ func TestParseStringDecimal(t *testing.T) {
 
 	if ParseStringDecimal("38") != 38 {
 		t.Errorf("ParseStringDecimal(\"38\") == %d, expected 38", ParseStringDecimal("38"))
+	}
+	if ParseStringDecimal("A") != -1 {
+		t.Errorf("ParseStringDecimal(\"A\") == %d, expected -1", ParseStringDecimal("A"))
 	}
 }
